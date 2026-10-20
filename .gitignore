@@ -1,0 +1,18 @@
+node_modules/
+*.tgz
+*.tsbuildinfo
+__pycache__/
+*.pyc
+
+# Local credentials, sessions, and benchmark output must never be published.
+.env
+.env.*
+auth.json
+.pi/
+*.jsonl
+benchmark-results/
+speed-benchmarks/
+results.json
+metadata.json
+*-output.txt
+*-stderr.txt

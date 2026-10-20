@@ -1,0 +1,18 @@
+{
+  "name": "@robertgreiner/pi-token-speed",
+  "version": "0.1.0",
+  "description": "Provider-neutral, turn-wide token throughput for Pi. Observes requests without changing them.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Robert Greiner",
+  "repository": { "type": "git", "url": "https://github.com/robertgreiner/pi-token-speed.git" },
+  "bugs": "https://github.com/robertgreiner/pi-token-speed/issues",
+  "homepage": "https://github.com/robertgreiner/pi-token-speed#readme",
+  "keywords": ["pi-package", "pi-extension", "tokens", "throughput"],
+  "engines": { "node": ">=22.19.0" },
+  "pi": { "extensions": ["./index.ts"] },
+  "files": ["index.ts", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test test.ts", "typecheck": "tsc --noEmit" },
+  "peerDependencies": { "@earendil-works/pi-ai": "*", "@earendil-works/pi-coding-agent": "*" },
+  "devDependencies": { "@earendil-works/pi-ai": "1.3.0", "@earendil-works/pi-coding-agent": "1.3.0", "@types/node": "26.6.5", "typescript": "7.0.2" }
+}
